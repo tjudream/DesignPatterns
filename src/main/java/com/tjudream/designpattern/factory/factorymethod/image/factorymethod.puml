@@ -1,0 +1,23 @@
+@startuml
+skinparam classAttributeIconSize 0
+abstract class Product {
+    +use():void
+}
+class ConcreteProduct {
+    +use():void
+}
+abstract class Factory {
+    +factoryMethod():Product
+}
+class ConcreteFactory {
+    +factoryMethod():Product
+}
+
+Factory <|-- ConcreteFactory
+Product <|-- ConcreteProduct
+ConcreteProduct <- ConcreteFactory
+
+note "return new ConcreteProduct();" as N1
+ConcreteFactory .. N1
+
+@enduml

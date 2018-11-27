@@ -1,0 +1,15 @@
+@startuml
+
+actor iMain
+iMain -> ConcreteFactory: 1.0 factoryMethod(): Product
+activate iMain
+activate ConcreteFactory
+ConcreteFactory --> ConcreteProduct: 1.1 create
+activate ConcreteProduct
+deactivate ConcreteFactory
+
+iMain -> ConcreteProduct: 1.2 use
+deactivate iMain
+deactivate ConcreteProduct
+destroy ConcreteProduct
+@enduml

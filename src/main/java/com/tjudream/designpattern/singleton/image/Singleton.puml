@@ -1,0 +1,15 @@
+@startuml
+skinparam classAttributeIconSize 0
+Client -> Singleton
+class Client {
+}
+class Singleton {
+    -{static}singleton;
+    -Singleton()
+    +{static}getSingleton():Singleton
+}
+
+note "通过Singleton.getSingleton()方式访问" as N1
+Client .. N1
+
+@enduml

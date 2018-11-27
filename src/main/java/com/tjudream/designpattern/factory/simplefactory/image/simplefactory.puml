@@ -1,0 +1,21 @@
+@startuml
+skinparam classAttributeIconSize 0
+abstract class Product {
+    +use():void
+}
+class ConcreteProduct1 {
+    +use():void
+}
+class ConcreteProduct2 {
+    +use():void
+}
+class Factory {
+    +createProduct(String):Product
+}
+
+Product <|.. ConcreteProduct1
+Product <|.. ConcreteProduct2
+ConcreteProduct1 <.. Factory
+ConcreteProduct2 <.. Factory
+
+@enduml
