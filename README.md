@@ -26,7 +26,7 @@
 ### 2.2 结构型模式
 * 包括7个：
 >* [适配器模式](src/main/java/com/tjudream/designpattern/adapter/README.md)
->* 桥接模式
+>* [桥接模式](src/main/java/com/tjudream/designpattern/builder/README.md)
 >* 组合模式
 >* 装饰者模式
 >* 外观模式
