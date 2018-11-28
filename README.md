@@ -1,7 +1,6 @@
 # DesignPatterns
 设计模式
 ## 1. 六大设计原则
-## 1. 六大设计原则
 ### 1.1 单一职责原则(Single Responsibility Principle)
 * 定义：不要存在多于一个导致类变更的原因。通俗的说，即一个类只负责一项职责。
 ### 1.2 里氏替换原则(Law Of Demeter)
@@ -22,7 +21,7 @@
 >* [简单工厂模式](src/main/java/com/tjudream/designpattern/factory/simplefactory/README.md)
 >* [工厂方法模式](src/main/java/com/tjudream/designpattern/factory/factorymethod/README.md)
 >* [抽象工厂模式](src/main/java/com/tjudream/designpattern/factory/abstractfactory/README.md)
->* 建造者模式
+>* [建造者模式](src/main/java/com/tjudream/designpattern/builder/README.md)
 >* 原型模式
 ### 2.2 结构型模式
 * 包括7个：
@@ -44,5 +43,9 @@
 >* 观察者模式
 >* 状态模式
 >* 策略模式
->* 模板方法模式
+>* [模板方法模式](src/main/java/com/tjudream/designpattern/templatemethod/README.md)
 >* 访问者模式
+
+## 3.参考资料
+* 《设计模式之禅》
+* [Graphic Design Patterns](https://design-patterns.readthedocs.io)

@@ -1,0 +1,23 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Director <<导演类>> {
+    -builder
+    +getProduct()
+}
+abstract class Builder <<抽象建造者>> {
+    {abstract}+setPart()
+    {abstract}+BuilderPart()
+}
+class ConcreteBuilder <<建造者>> {
+    +setPart()
+    +BuilderPart()
+}
+class Product <<产品类>> {
+    +doSomething()
+}
+
+Director o-> Builder:+builder
+Builder <|-- ConcreteBuilder
+ConcreteBuilder -> Product
+
+@enduml

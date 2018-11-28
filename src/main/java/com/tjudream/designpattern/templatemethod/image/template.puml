@@ -1,0 +1,21 @@
+@startuml
+skinparam classAttributeIconSize 0
+abstract class AbstractClass {
+    #doAnything():void
+    #doSomething():void
+    +templateMethod():void
+}
+class ConcreteClass1 {
+    #doAnything():void
+    #doSomething():void
+}
+class ConcreteClass2 {
+    #doAnything():void
+    #doSomething():void
+}
+
+AbstractClass <|-- ConcreteClass1
+AbstractClass <|-- ConcreteClass2
+
+
+@enduml
