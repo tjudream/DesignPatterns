@@ -1,0 +1,19 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class Adaptee {
+    +specificRequest():void
+}
+class Adapter {
+    -adaptee:Adaptee
+    +request():void
+}
+class Target {
+    +request():void
+}
+
+Client -> Target
+Target <|-- Adapter
+Adapter -|> Adaptee
+
+@enduml

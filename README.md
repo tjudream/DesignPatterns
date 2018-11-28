@@ -22,10 +22,10 @@
 >* [工厂方法模式](src/main/java/com/tjudream/designpattern/factory/factorymethod/README.md)
 >* [抽象工厂模式](src/main/java/com/tjudream/designpattern/factory/abstractfactory/README.md)
 >* [建造者模式](src/main/java/com/tjudream/designpattern/builder/README.md)
->* 原型模式
+>* [原型模式](src/main/java/com/tjudream/designpattern/prototype/README.md)
 ### 2.2 结构型模式
 * 包括7个：
->* 适配器模式
+>* [适配器模式](src/main/java/com/tjudream/designpattern/adapter/README.md)
 >* 桥接模式
 >* 组合模式
 >* 装饰者模式

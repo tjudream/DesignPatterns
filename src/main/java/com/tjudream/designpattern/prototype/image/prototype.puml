@@ -1,0 +1,11 @@
+@startuml
+
+skinparam classAttributeIconSize 0
+
+abstract class Prototype{
+    +clone()
+}
+Client -> Prototype:+prototype
+Prototype <|-- ConcretePrototype
+
+@enduml
