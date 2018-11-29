@@ -1,0 +1,19 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Facade <<门面角色>> {
+    +wrapOperation()
+}
+class SystemA <<子系统角色>> {
+    +operationA()
+}
+class SystemB <<子系统角色>> {
+    +operationB()
+}
+class SystemC <<子系统角色>> {
+    +operationC()
+}
+Facade --> SystemA
+Facade --> SystemB
+Facade --> SystemC
+Client --> Facade
+@enduml
