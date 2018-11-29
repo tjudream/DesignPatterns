@@ -1,0 +1,17 @@
+@startuml
+skinparam classAttributeIconSize 0
+abstract class Component <<抽象构件角色>> {
+    +Operation()
+}
+class Composite <<树枝构件>> {
+    +Add(Component)
+    +Remove(Component)
+    +GetChild(int)
+}
+class Leaf <<叶子构件>>
+Client -> Component
+Component <|-- Leaf
+Component <|-- Composite
+Component <--o Composite
+
+@enduml

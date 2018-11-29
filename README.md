@@ -27,8 +27,8 @@
 * 包括7个：
 >* [适配器模式](src/main/java/com/tjudream/designpattern/adapter/README.md)
 >* [桥接模式](src/main/java/com/tjudream/designpattern/builder/README.md)
->* 组合模式
->* 装饰者模式
+>* [组合模式](src/main/java/com/tjudream/designpattern/composite/README.md)
+>* [装饰者模式](src/main/java/com/tjudream/designpattern/decorator/README.md)
 >* 外观模式
 >* 享元模式
 >* 代理模式
