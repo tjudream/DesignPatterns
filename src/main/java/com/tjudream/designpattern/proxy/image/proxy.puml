@@ -1,0 +1,19 @@
+@startuml
+skinparam classAttributeIconSize 0
+interface Subject <<抽象主题角色>> {
+    +request()
+}
+class RealSubject <<具体主题角色>> {
+    +request()
+}
+class Proxy <<代理主题角色>> {
+    +beforeRequest():void
+    +afterRequest():void
+    +request():void
+}
+
+Subject <|-- RealSubject
+Subject <|-- Proxy
+Proxy -> RealSubject:+RealSubject
+Client .> Proxy
+@enduml

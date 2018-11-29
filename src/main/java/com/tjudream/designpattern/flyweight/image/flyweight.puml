@@ -1,0 +1,18 @@
+@startuml
+skinparam classAttributeIconSize 0
+abstract class Flyweight <<抽象享元角色>> {
+    +operation()
+}
+class FlyweightFactory <<享元工厂>> {
+    +getFlyweight(key)
+}
+class ConcreteFlyweight <<具体享元角色>>
+class unsharedConcreteFlyweight <<不可共享的享元角色>>
+
+FlyweightFactory o-> Flyweight : +flyweight
+Flyweight <|-- ConcreteFlyweight
+Flyweight <|-- unsharedConcreteFlyweight
+FlyweightFactory <-- Client
+ConcreteFlyweight <-- Client
+unsharedConcreteFlyweight <-- Client
+@enduml

@@ -1,0 +1,30 @@
+@startuml
+skinparam classAttributeIconSize 0
+interface Subject <<抽象主题角色>> {
+    +request()
+}
+class RealSubject <<具体主题角色>> {
+    +request()
+}
+class DynamicProxy {
+}
+interface InvocationHandler
+class MyInvocationHandler
+interface IAdvice {
+    +exec():void
+}
+class BeforeAdvice
+
+Subject <|-- RealSubject
+Client --> Subject
+DynamicProxy <- Client
+DynamicProxy ..> InvocationHandler
+DynamicProxy ..> IAdvice
+InvocationHandler <|-- MyInvocationHandler
+IAdvice <|-- BeforeAdvice
+
+note "通知" as N1
+IAdvice . N1
+note "前置通知" as N2
+BeforeAdvice . N2
+@enduml

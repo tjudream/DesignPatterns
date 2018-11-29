@@ -30,8 +30,8 @@
 >* [组合模式](src/main/java/com/tjudream/designpattern/composite/README.md)
 >* [装饰者模式](src/main/java/com/tjudream/designpattern/decorator/README.md)
 >* [门面模式](src/main/java/com/tjudream/designpattern/facade/README.md)
->* 享元模式
->* 代理模式
+>* [享元模式](src/main/java/com/tjudream/designpattern/flyweight/README.md)
+>* [代理模式](src/main/java/com/tjudream/designpattern/proxy/README.md)
 ### 2.3 行为型模式
 * 包括11个
 >* 职责链模式
