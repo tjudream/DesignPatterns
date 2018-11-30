@@ -34,7 +34,7 @@
 >* [代理模式](src/main/java/com/tjudream/designpattern/proxy/README.md)
 ### 2.3 行为型模式
 * 包括11个
->* 职责链模式
+>* [责任链模式](src/main/java/com/tjudream/designpattern/chainofresponsibility/README.md)
 >* 命令模式
 >* 解释器模式
 >* 迭代器模式

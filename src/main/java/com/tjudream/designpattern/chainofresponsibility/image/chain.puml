@@ -1,0 +1,12 @@
+@startuml
+skinparam classAttributeIconSize 0
+abstract class Handler {
+    +handlerRequest()
+    +setNextHandler(Handler)
+}
+class ConcreteHandler {
+}
+Client -> Handler
+Handler <|-- ConcreteHandler
+Handler -> Handler:+successor
+@enduml
