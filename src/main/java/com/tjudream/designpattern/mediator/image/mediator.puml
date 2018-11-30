@@ -1,0 +1,9 @@
+@startuml
+skinparam classAttributeIconSize 0
+abstract class Mediator <<抽象中介者角色>>
+class ConcreteMediator <<具体中介者角色>>
+class Colleague <<同事角色>>
+
+Mediator <- Colleague
+Mediator <|-- ConcreteMediator
+@enduml

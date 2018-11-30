@@ -38,7 +38,7 @@
 >* [命令模式](src/main/java/com/tjudream/designpattern/composite/README.md)
 >* [解释器模式](src/main/java/com/tjudream/designpattern/interpreter/README.md)
 >* [迭代器模式](src/main/java/com/tjudream/designpattern/iterator/README.md)
->* 中介者模式
+>* [中介者模式](src/main/java/com/tjudream/designpattern/mediator/README.md)
 >* 备忘录模式
 >* 观察者模式
 >* 状态模式
