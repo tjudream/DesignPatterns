@@ -1,0 +1,20 @@
+@startuml
+skinparam classAttributeIconSize 0
+interface Aggregate <<抽象容器>> {
+    +createIterator()
+}
+interface Iterator <<抽象迭代器>> {
+    +first()
+    +next()
+    +isDone()
+    +currentItem()
+}
+class ConcreteIterator <<具体迭代器>>
+class ConcreteAggregate <<具体容器>>
+
+Aggregate <|-- ConcreteAggregate
+Iterator <|-- ConcreteIterator
+ConcreteAggregate .> ConcreteIterator
+ConcreteAggregate <- ConcreteIterator
+
+@enduml

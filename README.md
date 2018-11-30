@@ -37,7 +37,7 @@
 >* [责任链模式](src/main/java/com/tjudream/designpattern/chainofresponsibility/README.md)
 >* [命令模式](src/main/java/com/tjudream/designpattern/composite/README.md)
 >* [解释器模式](src/main/java/com/tjudream/designpattern/interpreter/README.md)
->* 迭代器模式
+>* [迭代器模式](src/main/java/com/tjudream/designpattern/iterator/README.md)
 >* 中介者模式
 >* 备忘录模式
 >* 观察者模式
