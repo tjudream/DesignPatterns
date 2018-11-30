@@ -1,0 +1,15 @@
+@startuml
+skinparam classAttributeIconSize 0
+abstract class AbstractExpression <<抽象解释器>> {
+    +interpret()
+}
+class TerminalExpression <<终结符表达式>>
+class NonterminalExpression <<非终结符表达式>>
+class Context <<环境角色>>
+
+Client --> Context
+Client -> AbstractExpression
+AbstractExpression <|-- TerminalExpression
+AbstractExpression <|-- NonterminalExpression
+AbstractExpression <--o NonterminalExpression:*
+@enduml
