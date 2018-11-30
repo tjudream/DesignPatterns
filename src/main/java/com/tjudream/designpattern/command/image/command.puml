@@ -1,0 +1,19 @@
+@startuml
+skinparam classAttributeIconSize 0
+abstract class Command <<命令角色>> {
+    +execute()
+}
+class Invoker <<调用者角色>> {
+    +action()
+}
+abstract class Receiver <<接收者角色>> {
+    +doSomething()
+}
+
+Receiver <-- Client
+ConcreteCommand <.. Client
+Invoker o-> Command
+Command <|-- ConcreteCommand
+Receiver <- ConcreteCommand:+receiver
+
+@enduml

@@ -35,7 +35,7 @@
 ### 2.3 行为型模式
 * 包括11个
 >* [责任链模式](src/main/java/com/tjudream/designpattern/chainofresponsibility/README.md)
->* 命令模式
+>* [命令模式](src/main/java/com/tjudream/designpattern/composite/README.md)
 >* 解释器模式
 >* 迭代器模式
 >* 中介者模式
