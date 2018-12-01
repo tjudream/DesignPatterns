@@ -1,0 +1,25 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Originator <<发起人角色>> {
+    -state1:String
+    -state2:String
+    -state3:String
+    +getter()/setter()
+}
+class Memento <<备忘录角色>> {
+    -stateMap:HashMap<String,Object>
+    +getter()/setter()
+}
+class Caretaker <<备忘录管理员角色>> {
+    -memento:Memento
+    +getter()/setter()
+}
+class BeanUtils {
+    +{static}backupProp(bean:Object):HashMap<String,Object>
+    +{static}restoreProp(bean:Object,propMap:HashMap<String,Object>):void
+}
+
+Originator .> Memento
+Memento <-o Caretaker:+memento
+Originator ..> BeanUtils
+@enduml

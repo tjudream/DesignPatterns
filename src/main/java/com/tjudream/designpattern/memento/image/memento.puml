@@ -1,0 +1,15 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Originator <<发起人角色>> {
+    +setMemento(m:Memento)
+    +createMemento()
+}
+class Memento <<备忘录角色>> {
+    +getState()
+    +setState()
+}
+class Caretaker <<备忘录管理员角色>>
+
+Originator .> Memento
+Memento <-o Caretaker:+memento
+@enduml

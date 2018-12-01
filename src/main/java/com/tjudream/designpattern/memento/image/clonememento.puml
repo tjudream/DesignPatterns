@@ -1,0 +1,19 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Originator <<发起人角色>> {
+    +createMemento():Originator
+    +restoreMemento(originator:Originator):void
+    +clone():Originator
+
+}
+class Caretaker <<备忘录管理员角色>> {
+    -originator:Originator
+    +getOriginator()
+    +setOriginator(originator:Originator)
+}
+interface Cloneable
+
+Cloneable <|.. Originator
+Originator .> Originator
+Originator <--o Caretaker:+memento
+@enduml

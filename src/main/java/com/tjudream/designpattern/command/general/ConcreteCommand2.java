@@ -17,6 +17,6 @@ public class ConcreteCommand2 extends Command {
     @Override
     public void execute() {
         //业务处理
-        this.receiver.action();
+        this.receiver.doSomething();
     }
 }

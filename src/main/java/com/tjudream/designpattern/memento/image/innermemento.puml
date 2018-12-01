@@ -1,0 +1,23 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Originator <<发起人角色>> {
+    -state:String
+    +getter()/setter()
+    +createMemento():IMemento
+    +restoreMemento(memento:Memento):void
+}
+interface IMemento
+class Memento <<备忘录角色>> {
+    -state:String
+    +getter()/setter()
+}
+class Caretaker <<备忘录管理员角色>> {
+    -memento:IMemento
+    +getter()/setter()
+}
+
+Originator .> IMemento
+IMemento <|-- Memento
+IMemento <-o Caretaker
+Originator <-- Memento:内部类
+@enduml
