@@ -39,8 +39,8 @@
 >* [解释器模式](src/main/java/com/tjudream/designpattern/interpreter/README.md)
 >* [迭代器模式](src/main/java/com/tjudream/designpattern/iterator/README.md)
 >* [中介者模式](src/main/java/com/tjudream/designpattern/mediator/README.md)
->* 备忘录模式
->* 观察者模式
+>* [备忘录模式](src/main/java/com/tjudream/designpattern/memento/README.md)
+>* [观察者模式](src/main/java/com/tjudream/designpattern/observer/README.md)
 >* 状态模式
 >* 策略模式
 >* [模板方法模式](src/main/java/com/tjudream/designpattern/templatemethod/README.md)

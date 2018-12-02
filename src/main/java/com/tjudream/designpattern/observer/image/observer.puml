@@ -1,0 +1,16 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Subject <<被观察者>> {
+    +attach(o:Observer)
+    +detach(o:Observer)
+    +notify()
+}
+interface Observer <<观察者>> {
+    +update()
+}
+
+Subject <|-- ConcreteSubject
+Observer <|-- ConcreteObserver
+Subject -> Observer:+subject
+
+@enduml
