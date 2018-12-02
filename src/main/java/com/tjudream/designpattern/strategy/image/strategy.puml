@@ -1,0 +1,13 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Context <<封装角色>> {
+    +contextInterface()
+}
+interface Strategy <<抽象策略角色>>  {
+    +algorithmInterface()
+}
+
+Context o-> Strategy:+strategy
+Strategy <|-- ConcreteStrategy
+
+@enduml

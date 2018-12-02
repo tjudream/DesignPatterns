@@ -1,0 +1,15 @@
+@startuml
+skinparam classAttributeIconSize 0
+class Context <<环境角色>> {
+    +request()
+}
+abstract class State <<抽象状态角色>> {
+    +handler()
+}
+class ConcreteState <<具体状态角色>>
+
+Client -> Context
+Context o-> State:+state
+State <|-- ConcreteState
+
+@enduml
