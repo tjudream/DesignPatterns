@@ -44,7 +44,7 @@
 >* [状态模式](src/main/java/com/tjudream/designpattern/state/README.md)
 >* [策略模式](src/main/java/com/tjudream/designpattern/strategy/README.md)
 >* [模板方法模式](src/main/java/com/tjudream/designpattern/templatemethod/README.md)
->* 访问者模式
+>* [访问者模式](src/main/java/com/tjudream/designpattern/visitor/README.md)
 
 ## 3.参考资料
 * 《设计模式之禅》

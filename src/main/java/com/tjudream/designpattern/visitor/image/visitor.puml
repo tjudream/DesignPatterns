@@ -1,0 +1,20 @@
+@startuml
+skinparam classAttributeIconSize 0
+abstract class Visitor <<抽象访问者>> {
+    +visitConcreateElement(elem:ConcreateElement)
+}
+abstract class Element <<抽象元素>> {
+    +accept(v:Visitor)
+}
+class ConcreteVisitor <<具体访问者>>
+class ConcreteElement <<具体元素>>
+class ObjectStruture <<结构对象>>
+
+Client -> Visitor
+Visitor <|-- ConcreteVisitor
+Visitor <..Element
+Element <|-- ConcreateElement
+Client --> ObjectStruture
+ObjectStruture -> Element:*
+
+@enduml
